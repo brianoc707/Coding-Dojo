@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here are members of the Dojo {{dojo.name}}</h1>
+        <ol>
+    {% for ninjas in dojo.ninjas.all %}
+        <li>{{ninjas.first_name}} {{ninjas.last_name}}</li>
+    {% endfor %}
+        </ol>
+</body>
+</html>

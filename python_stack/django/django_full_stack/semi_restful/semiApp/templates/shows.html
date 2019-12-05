@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th{
+                border: 1px solid #dddddd;
+                padding: 8px;
+            }
+        
+            tr:nth-child(even){
+                background-color: #dddddd;  
+            }
+        </style>
+</head>
+<body>
+    <h1>All Shows</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Network</th>
+            <th>Release Date</th>
+            <th>Actions</th>
+        </tr>
+       {% for shows in allShows %}
+        <tr>
+            <td>{{shows.id}}</td>
+            <td>{{shows.title}}</td>
+            <td>{{shows.network}}</td>
+            <td>{{shows.release_date}}</td>
+            <td><a href="shows/{{shows.id}}">Show</a><a href="shows/{{shows.id}}/edit">Edit</a><a href="/shows/{{shows.id}}/destroy">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/shows/new">Add a new show</a></p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .boxes{
+            border: solid black 1px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/logout">Logout</a>
+    <h1>Welcome, {{loggedinUser.name}}</h1>
+    <div class="quotes">
+    <h3>Quotable Quotes</h3>
+        {% for quote in quotesNotFavorited %}
+        <div class="boxes">
+            <p>{% if quote.poster == loggedinUser %} <a href="/quotes/{{quote.id}}">Edit</a> | <a href="/delete/{{quote.id}}">Delete</a>{% endif %}</p>
+            <p>{{quote.quoter}}: {{quote.message}}</p>
+            <p>Posted By: <a href="/users/{{quote.poster.id}}">{{quote.poster.name}}</a></p>
+            <a href="/favorite/{{quote.id}}"><button>Add to Favorites</button></a>
+        </div>
+        {% endfor %}
+    </div>
+        
+    <div class="quotes">
+    
+    <h3>Your Favorites</h3>
+    {% for quote in quotesFavorited %}
+        <div class="boxes">
+                <p>{{quote.quoter}}: {{quote.message}}</p>
+                <p>Posted By: <a href="/users/{{quote.poster.id}}">{{quote.poster.name}}</a></p>
+                <a href="/remove/{{quote.id}}"><button>Remove From Favorites</button></a>
+        </div>
+    {% endfor %}
+    </div>
+
+    <div class="make">
+            {% if messages %}
+            <ul class="messages">    
+                {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                {% endfor %}
+            </ul>
+            {% endif %}
+        <p>Contribute a Quote</p>
+        <form action="/createQuote" method="post">
+            {% csrf_token %}
+            <p>Quoted By <input type="text" name = "quoter"></p>
+            <p>Message <input type="text" name = "message"></p>
+            <input type="submit" value="Submit">
+        </form>
+        </form>
+    </div>
+
+    
+</body>
+</html>

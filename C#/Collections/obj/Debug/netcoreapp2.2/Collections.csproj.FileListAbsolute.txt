@@ -1,0 +1,11 @@
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/bin/Debug/netcoreapp2.2/Collections.deps.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/bin/Debug/netcoreapp2.2/Collections.runtimeconfig.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/bin/Debug/netcoreapp2.2/Collections.runtimeconfig.dev.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/bin/Debug/netcoreapp2.2/Collections.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/bin/Debug/netcoreapp2.2/Collections.pdb
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.csprojAssemblyReference.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.csproj.CoreCompileInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.AssemblyInfoInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.AssemblyInfo.cs
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Collections/obj/Debug/netcoreapp2.2/Collections.pdb

@@ -1,0 +1,11 @@
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/bin/Debug/netcoreapp2.1/Basic13.deps.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/bin/Debug/netcoreapp2.1/Basic13.runtimeconfig.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/bin/Debug/netcoreapp2.1/Basic13.runtimeconfig.dev.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/bin/Debug/netcoreapp2.1/Basic13.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/bin/Debug/netcoreapp2.1/Basic13.pdb
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.csprojAssemblyReference.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.csproj.CoreCompileInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.AssemblyInfoInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.AssemblyInfo.cs
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Basic13Template/obj/Debug/netcoreapp2.1/Basic13.pdb

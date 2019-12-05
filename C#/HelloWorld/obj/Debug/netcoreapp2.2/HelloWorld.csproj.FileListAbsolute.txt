@@ -1,0 +1,14 @@
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.deps.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.runtimeconfig.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.runtimeconfig.dev.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/bin/Debug/netcoreapp2.2/HelloWorld.pdb
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.csprojAssemblyReference.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorAssemblyInfo.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorAssemblyInfo.cs
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.AssemblyInfoInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.AssemblyInfo.cs
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.RazorTargetAssemblyInfo.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/HelloWorld/obj/Debug/netcoreapp2.2/HelloWorld.pdb

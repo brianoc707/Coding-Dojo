@@ -1,0 +1,11 @@
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.csprojAssemblyReference.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.csproj.CoreCompileInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.AssemblyInfoInputs.cache
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.AssemblyInfo.cs
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/bin/Debug/netcoreapp2.2/Human.deps.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/bin/Debug/netcoreapp2.2/Human.runtimeconfig.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/bin/Debug/netcoreapp2.2/Human.runtimeconfig.dev.json
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/bin/Debug/netcoreapp2.2/Human.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/bin/Debug/netcoreapp2.2/Human.pdb
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.dll
+/Users/THABOSSMAN/Documents/Coding_Dojo/C#/Human/obj/Debug/netcoreapp2.2/Human.pdb

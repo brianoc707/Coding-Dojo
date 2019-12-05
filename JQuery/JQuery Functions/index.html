@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Functions</title>
+    <script type="text/javascript" src ="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+     
+        $('#alert').click(function(){
+            alert('this is h1 tag');
+        });
+
+        $('#hide').click(function(){
+            $('p').hide();
+        });
+        $('#show').click(function(){
+            $('p').show();
+        });
+        $('h2').hover(function(){
+            $('h2').text("WAKE UP");
+        });
+        $('#append').click(function(){
+            $('#result').append("<h5>hello</h5>");
+        });
+        $('#toggle').click(function(){
+            $('#tenma').toggle("slow", function(){
+
+            });
+        });
+        $('#slide').click(function(){
+            $("#sliding").slideDown("slow", function(){
+
+            });
+        });
+        $("#ok").click(function(){
+            var text = $(this).text();
+            $(".inputval").val(text);
+        });
+        $('#press').click(function(){
+            var htmlString = $(this).html();
+            $(this).text(htmlString);
+        });
+
+
+
+        
+
+
+
+
+    })
+    </script>
+    
+</head>
+
+<body>
+
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="append">Click to add html</button>
+
+    <h1 id="alert">this is a header</h1>
+
+    <h3>i want to go home</h3>
+
+    <h2>im tired</h2>
+    
+    <p>this is a paragraph</p>
+
+    <p>paragraph 2</p>
+        
+    <button>Click here</button>
+    
+    <input type="text">
+
+    <div id="result"></div>
+    <br>
+    
+    <div id="slide">CLICK THIS</div>
+    <div id ="sliding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel cum placeat incidunt quo sapiente soluta quaerat facilis ab veritatis amet!</div>
+
+    <div id="toggle">CLICK</div>
+    <img id="tenma" src="dr tenma.jpg" alt="tenma">
+    <br>
+    <div>
+    <button id="ok">1</button>
+    <button id="ok">2</button>
+    <button id="ok">3</button>
+    </div>
+    <input class="inputval" type="text" value="click one">
+
+    <button id="press">Convert me to text</button>
+    
+
+
+
+
+
+</body>
+</html>
+
+<!-- 
+
+
+
+
+slideDown
+slideUp
+slideToggle
+fadeIn
+fadeOut
+addClass
+before
+after
+html 
+attr
+
+   -->

@@ -1,0 +1,3 @@
+Recursive in order subset
+
+def rios(string, sub = "", i = 0):

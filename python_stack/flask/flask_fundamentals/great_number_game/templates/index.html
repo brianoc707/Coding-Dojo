@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    
+</head>
+<body>
+    <div class="form">
+        <h1>Welcome to the Great Number Game!</h1>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>Take a guess!</p>
+        <p>You have guessed {{attempts}} times</p>
+        {% if result == "" %}
+        <form action="/guess" method="post"><p><input type="number" name="guess">
+            <input type="submit" value="Submit"></p>
+        </form>
+        {% endif %}
+        {% if result == 'Too high.' or result == 'Too Low' %}
+        <div style = "background-color: red;">
+            <p>{{result}}</p>
+        </div>
+        
+        <form action="/guess" method="post"><p><input type="number" name="guess">
+            <input type="submit" value="Submit"></p>
+        </form>
+        
+        {% elif result == "Correct!" %}
+        <div style = "background-color: green;">
+            <p>{{result}}</p>
+            <a href="/playAgain"><button>Play Again</button></a>
+        </div>
+        
+        {% endif %}
+        
+
+    </div>  
+</body>
+</html>

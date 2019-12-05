@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+        </ul>
+        {% endif %}
+    <h1>Hello  Edit WIsh</h1>
+    <form action="/updateWish/{{wish.id}}" method="post">
+        {% csrf_token %}
+        <p>I wish for: <input type="text" name = "item" value = {{wish.item}}></p>
+        <p>Desc: <input type="text" name = "desc" value = "{{wish.desc}}"></p>
+        <input type="submit" value="Submit">
+    </form>
+    <a href=""><button>Cancel</button></a>
+</body>
+</html>

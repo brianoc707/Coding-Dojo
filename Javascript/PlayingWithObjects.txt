@@ -1,0 +1,9 @@
+How would you print/log John's age?
+console.log(user.name[1], user.age[1]);
+How would you print/log the name of the first object?
+console.log(user.name[0]);
+How would you print/log the name and age of each user using a for loop?
+namAge(arr){
+for(i = 0; i < arr.length; i++){
+console.log(arr[i].name);
+console.log(arr[i].age);

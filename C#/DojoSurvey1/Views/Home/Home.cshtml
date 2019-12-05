@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+        @model Survey
+        <form asp-action="Add" asp-controller="Home" method="post">
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <p>Your Name: <input asp-for="Name"></p>
+        <span asp-validation-for="Location" class="text-danger"></span>
+        <p>Dojo Location: <select asp-for="Location">
+        <option value = "Arlington">Arlington</option>
+        <option value ="China">China</option>
+        <option value= "Africa">Africa</option>
+        </select></p>
+        <span asp-validation-for="Language" class="text-danger"></span>
+        <p>Fav Language: <select asp-for="Language">
+        <option value = "Python">Python</option>
+        <option value ="Javascript">Javascript</option>
+        <option value="C#">C#</option>
+        </select></p>
+        <p>Comment (optional)</p>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+        <textarea name = "Comment"></textarea>
+        <input type="submit" value="Submit">
+        </form>
+    </div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th{
+                border: 1px solid #dddddd;
+                padding: 8px;
+            }
+        
+            tr:nth-child(even){
+                background-color: #dddddd;  
+            }
+        </style>
+</head>
+<body>
+    <div id="top">
+            <h1>Add an Author</h1>
+            <form action="" method="post">
+                {% csrf_token %}
+            <p>First Name:<input type="text" name="fname"></p>
+            <p>Last Name:<input type="text" name="lname"></p>
+            <p><input type="submit" value="Add Author"></p>
+            </form>
+            
+        </div> 
+        <div id = "table">
+            <table>
+                {% for authors in allauthors %}
+                    <tr>
+                        <td>{{authors.id}}</td>
+                        <td>{{authors.first_name}} {{authors.last_name}}</td>
+                        <td><a href="/authorsinfo/{{authors.id}}">Action</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+</body>
+</html>

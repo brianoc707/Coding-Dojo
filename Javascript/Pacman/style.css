@@ -1,0 +1,41 @@
+
+
+.row div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    
+}
+
+.brick{
+    background-color: blue;
+    
+}
+
+div.coin{
+    background: url('luffyface.png.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+
+
+body{
+    background-color: black;
+}
+
+
+
+#pacman{
+    background: url('pacman.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    
+}

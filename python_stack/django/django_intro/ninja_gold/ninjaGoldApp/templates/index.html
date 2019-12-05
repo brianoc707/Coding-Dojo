@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+}
+
+    #Activities {
+    display: inline-block;
+    width: 82%;
+    border: 1px solid black; 
+}
+
+    </style>
+</head>
+<body>
+        <p>Your Gold:  <input value="{{request.session.totalGold}}" type="text" name="" id=""><a href="/reset"><button>Reset</button></a></p>
+    
+        <div id = "box">
+            <h1>Farm</h1>
+            <p>(earns 10-20 gold)</p>
+            <form action="process_money" method="post">
+            {% csrf_token %}
+                <input type="hidden" name="building" value="Farm">
+                <input type="submit" value="Find Gold">
+            </form>
+        </div>
+        <div id = "box">    
+            <h1>Cave</h1>
+            <p>(earns 5-10 gold)</p>
+            <form action="process_money" method="post">
+            {% csrf_token %}
+                <input type="hidden" name="building" value="Cave">
+                <input type="submit" value="Find Gold">
+            </form>
+        </div>
+        <div id = "box">    
+            <h1>House</h1>
+            <p>(earns 2-5 gold)</p>
+            <form action="process_money" method="post">
+            {% csrf_token %}
+                <input type="hidden" name="building" value="House">
+                <input type="submit" value="Find Gold">
+            </form>
+        </div>
+        <div id = "box">    
+            <h1>Casino</h1>
+            <p>(earns 0-50 gold)</p>
+            <form action="process_money" method="post">
+            {% csrf_token %}   
+                <input type="hidden" name="building" value="Casino">
+                <input type="submit" value="Find Gold">
+            </form>
+        </div>
+        <div id = "Activities">
+            <p>Activities </p>
+            
+            <ul>
+            {% for i in request.session.activityLog %}
+            {% if 'Earned' in i %}
+            <li style= "color: green">{{i}}</li>
+            
+            {% else %}
+            <li style= "color: red">{{i}}</li>
+            {% endif %}
+            {% endfor %}
+            </ul>
+            
+        </div> 
+</body>
+</html>
