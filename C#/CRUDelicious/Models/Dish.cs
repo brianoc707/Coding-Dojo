@@ -13,6 +13,7 @@ public class Dish
         [Required]
         public int Tastiness {get;set;}
         [Required]
+        [Range (0,10000)]
         public int Calories {get;set;}
         [Required]
         public string Description {get;set;}

@@ -1,0 +1,24 @@
+﻿<h1>Chefs | <a href="/dishes">Dishes</a></h1>
+<p><a href="/new">Add a Chef</a></p>
+<h2>Check out our roster of Chefs</h2>
+
+@{
+    <table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Number of Dishes</th>
+    </tr>
+   
+    @foreach(var i in ViewBag.AllChefs)
+    {
+    <tr>
+    <td>@i.FirstName @i.LastName</td>
+    <td>@i.Age</td>
+    <td>@i.Dishes.Count</td>
+    </tr>
+    }
+    
+    </table>
+    
+}

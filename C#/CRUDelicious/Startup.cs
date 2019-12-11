@@ -28,7 +28,7 @@ namespace CRUDelicious
             
             
             services.AddDbContext<MyContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
-
+            services.AddSession(); 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -46,7 +46,7 @@ namespace CRUDelicious
 
             app.UseStaticFiles();
             
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
