@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+#shuffle, #reset, #deal {
+    background-color: rebeccapurple;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#reset {
+    background-color: mediumseagreen;
+}
+
+#deal {
+    background-color: tomato;
+}
+
+#table{
+    position: relative;
+    min-height: 200px;
+}
+
+#table img {
+    position: absolute;
+}
+
+#hand {
+    margin-top: 100px;
+}

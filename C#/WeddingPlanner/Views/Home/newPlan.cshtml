@@ -1,0 +1,26 @@
+<a href="/dashboard">Dashboard</a>
+<a href="/logout">Logout</a> 
+<h1>Plan Your Wedding</h1>
+
+@model Wedding
+ <form action ="/plan" method="post">
+        <div class= "form-group">
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <label  asp-for="Name"></label>
+        <input class = "form-control" asp-for="Name">
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="Date" class="text-danger"></span>
+        <label asp-for="Date"></label>
+        <input type="date" class = "form-control" asp-for="Date">
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="Address" class="text-danger"></span>
+        <label asp-for="Address"></label>
+        <input class = "form-control" asp-for="Address">
+        </div>
+        
+        <input type="submit" value="Create">
+        
+      
+    </form>
