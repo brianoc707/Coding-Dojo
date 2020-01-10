@@ -5,6 +5,7 @@ import HelloWorld from './Components/hello';
 import PersonCard from './Components/PersonCard';
 import MyNewComponent from './Components/MyNewComponent';
 import NewComponent from './Components/NewComponent';
+import CardPerson from './Components/CardPerson';
 const Button = (props) => {
   return(
     <button onClick={props.click}>{props.text}</button>
@@ -27,6 +28,8 @@ const App = () => {
       <Button text={buttonTwoText} click={clickHandler} />
 
       <NewComponent/>
+
+      <CardPerson lastName = "O'Connor" firstName = "Brian" age = {27} hairColor = "Brown" />
     
    
     </div>
