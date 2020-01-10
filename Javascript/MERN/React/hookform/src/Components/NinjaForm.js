@@ -6,21 +6,21 @@ const NinjaForm = props => {
         rank: "",
         village: "",
         age: "",
-        ninjas: []
+   
 
     });
     const createNinja = e => {
     e.preventDefault();
     console.log(state);
-        const ninjaToAdd = {
-            name: state.name,
-            rank: state.rank,
-            village: state.village,
-            age: state.age
-        };
-        const arrayToUpdate = [...state.ninjas];
-        arrayToUpdate.push(ninjaToAdd);
-        setState({...state, ninjas: arrayToUpdate});
+        props.addNinja(state);
+        setState({
+            name: "",
+            rank: "",
+            village: "",
+            age: "",
+          
+
+        });
         console.log(state);
 
     }
@@ -42,6 +42,8 @@ const NinjaForm = props => {
     }
     return (
         <>
+        <div className="container">
+        <h1>Ninjas</h1>
             <form onSubmit={createNinja}>
                 <div className="form-group">
                     <label>Name:</label>
@@ -49,6 +51,7 @@ const NinjaForm = props => {
                         type="text"
                         className="form-control"
                         onChange={changeName}
+                        value = {state.name}
 
                     />
                 </div>
@@ -58,6 +61,7 @@ const NinjaForm = props => {
                         type="text"
                         className="form-control"
                         onChange={changeRank}
+                        value = {state.rank}
 
                     />
                 </div>
@@ -67,6 +71,7 @@ const NinjaForm = props => {
                         type="text"
                         className="form-control"
                         onChange={changeVillage}
+                        value = {state.village}
 
                     />
                 </div>
@@ -76,11 +81,14 @@ const NinjaForm = props => {
                         type="text"
                         className="form-control"
                         onChange={changeAge}
+                        value = {state.age}
 
                     />
                 </div>
                 <input type = "submit" />
             </form>
+            </div>
+       
         </>
     );
 }  
