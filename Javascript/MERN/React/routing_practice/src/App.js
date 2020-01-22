@@ -26,15 +26,15 @@ const Next = e =>{
 function App() {
   return (
     <div className="App">
-      {/* <Link to="/home">Home</Link>
+      <Link to="/home">Home</Link>
       <Link to="/next">Next</Link>
 
       <Router>
       <Home path ="/home" />
       <Next path ="/next" />
-      </Router> */}
+      </Router>
       <LukeApi />
-      {/* <RequestFormAPI /> */}
+      <RequestFormAPI />
 
       
     </div>
