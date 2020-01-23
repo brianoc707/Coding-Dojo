@@ -50,6 +50,7 @@ return (
                         <input type="text"
                         className ="form-control"
                         onChange={e => setName(e.target.value)}
+                        step = "0.01"
                         value = {name}
                         />
                     <span className="text-danger">{errors.name ? errors.name.message: "" }</span>

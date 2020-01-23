@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import ProductForm from '../components/ProductForm';
 import EditProduct from '../components/EditProduct';
 import ProductInfo from '../components/ProductInfo';
-import { Router } from '@reach/router';
+import ProductList from '../components/ProductList';
+import { Router, Link } from '@reach/router';
 
 
 
@@ -17,11 +17,17 @@ export default () => {
 
     return(
         <>
+            <div className="container">
+            <Link to="/">Home</Link>
+            <Link to="/create">Add a new Product</Link>
+            </div>
             <Router>
                 <ProductInfo path ="/info/:id"/>
-                <ProductForm path = "/" removeFromDom = {removeFromDom}/>
+                <ProductForm path = "/create" />
+                <ProductList path = "/" removeFromDom = {removeFromDom}/>
                 <EditProduct path = "/edit/:_id" />
             </Router>
+            
         </>
     );
 }
