@@ -8,7 +8,7 @@ import {  Router, Link } from '@reach/router';
 
 export default () => {
     const [ message, setMessage ] = useState("...Loading");
-    const [ninjas, setNinjas] = useState([]);
+   ;
 
     useEffect(() => {
         axios.get('http://localhost:8000/api')

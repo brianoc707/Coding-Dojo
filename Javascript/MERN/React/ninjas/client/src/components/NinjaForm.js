@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import { navigate } from '@reach/router';
 
 
 
@@ -7,6 +8,7 @@ import axios from 'axios';
 export default props => {
     const [name, setName] = useState("");
     const [desc, setDesc] = useState("");
+    const [errors, setErrors] = useState({});
 
 
 
@@ -18,6 +20,13 @@ export default props => {
         })
             .then(res => {
                 console.log(res);
+                if(res.data.errors) {
+                    setErrors(res.data.errors);
+                }
+                else{
+                    navigate("/")
+                }
+                console.log(res)
               
             })
             .catch(err => console.log(err));
@@ -34,6 +43,7 @@ return (
                         className ="form-control"
                         onChange={e => setName(e.target.value)}
                         />
+                        <span className="text-danger">{errors.name ? errors.name.message: "" }</span>
                     
                     </div>
                     <div className="form-group">
@@ -42,6 +52,7 @@ return (
                         className = "form-control"
                         onChange={e => setDesc(e.target.value)}
                         />
+                        <span className="text-danger">{errors.desc ? errors.desc.message: "" }</span>
                     
                     </div>
                 <input className="btn btn-outline-success" type="submit"/> 

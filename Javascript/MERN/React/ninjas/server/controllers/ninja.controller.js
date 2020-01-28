@@ -19,7 +19,7 @@ module.exports.createNinja = (request, response) => {
 }
 
 module.exports.getAll = (request, response) => {
-    Ninja.find({})
+    Ninja.find({}).sort("name").exec()
         .then(ninjas => response.json(ninjas))
         .catch(err=> response.json(err))
 }
@@ -34,6 +34,28 @@ module.exports.getOne = (request, response) => {
 }
 
 module.exports.addNinjutsu = (request, response) => {
-    Ninja.findOneAndUpdate({_id: request.params._id})
+    Ninja.findOneAndUpdate(
+        {_id: request.params._id},
+        {$push: {ninjutsu: request.body.ninjutsu}}
         
+    )
+        .then(() => response.json({msg: "massive win"}))
+        .catch(err => response.json(err));
+    }
+module.exports.deleteNinjutsu = (request, response) => {
+    Ninja.findOneAndUpdate(
+        {_id: request.params._id},
+        {$pull: {ninjutsu: request.body.ninjutsu}}
+        
+    )
+        .then(() => response.json({msg: "massive win"}))
+        .catch(err => response.json(err));
+    }
+
+
+
+module.exports.deleteNinja = (request, response) => {
+    Ninja.deleteOne({_id: request.params._id})
+        .then(deleteConfirmation => response.json(deleteConfirmation))
+        .catch(err => response.json(err));
 }
